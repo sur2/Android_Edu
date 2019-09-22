@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/colorAccent"
+        android:text="Hello World!"
+        android:id="@+id/textViewReciev" />
+
+    <EditText
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="192.168.0.62" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Send message"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:id="@+id/messageText"
+        android:layout_below="@+id/portText"
+        android:layout_alignStart="@+id/portText"
+        android:layout_alignLeft="@+id/portText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="port"
+        android:ems="10"
+        android:id="@+id/portText"
+        android:layout_below="@+id/addressText"
+        android:layout_alignStart="@+id/addressText"
+        android:layout_alignLeft="@+id/addressText" />
+
+    <Button
+        android:text="clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonClear"
+        android:layout_alignBaseline="@+id/buttonConnect"
+        android:layout_alignBottom="@+id/buttonConnect"
+        android:layout_alignEnd="@+id/messageText"
+        android:layout_alignRight="@+id/messageText" />
+
+    <Button
+        android:text="Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonConnect"
+        android:layout_below="@+id/messageText"
+        android:layout_alignStart="@+id/messageText"
+        android:layout_marginTop="13dp"
+        android:layout_alignLeft="@+id/messageText" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="show~"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+
+</RelativeLayout>
